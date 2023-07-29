@@ -7,54 +7,54 @@
   <link rel="stylesheet" href="portfolio-styles.css">
 </head>
 <body>
-  <header>
-    <h1>Graphic Designer Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header class="head">
+    <h1 class="head__intro">Graphic Designer Portfolio</h1>
+    <nav class="head__nav">
+      <ul class="head__list">
+        <li class="head__list-item"><a class="head__about" href="#about">About</a></li>
+        <li class="head__list-item"><a class="head__potfolio" href="#portfolio">Portfolio</a></li>
+        <li class="head__list-item"><a class="head__contact" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a passionate graphic designer with a keen eye for detail and a love for creating visually stunning designs. My goal is to bring ideas to life through innovative and creative design solutions.</p>
+  <main class="main">
+    <section class="main__about" id="about">
+      <h2 class="main__about-title">About Me</h2>
+      <p class="main__about-desc">I am a passionate graphic designer with a keen eye for detail and a love for creating visually stunning designs. My goal is to bring ideas to life through innovative and creative design solutions.</p>
     </section>
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project 1</h3>
-        <p>Description of the project goes here...</p>
+    <section class="main__portfolio" id="portfolio">
+      <h2 class="main__portfolio-header">Portfolio</h2>
+      <div class="project main__portfolio-project">
+        <img class="project__image main__portfolio-project-image"src="project1.jpg" alt="Project 1">
+        <h3 class="project__heading main__portfolio-project-heading">Project 1</h3>
+        <p class="project__desc main__portfolio-project-desc">Description of the project goes here...</p>
       </div>
-      <div class="project">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>Description of the project goes here...</p>
+      <div class="project main__portfolio-project">
+        <img src="project2.jpg" alt="Project 2" class="project__image main__portfolio-project-image">
+        <h3 class="project__heading main__portfolio-project-heading">Project 2</h3>
+        <p class="porject__desc main__portfolio-project-desc">Description of the project goes here...</p>
       </div>
       <!-- Add more projects here -->
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
+    <section id="contact" class="main__contact">
+      <h2 class="main__contact-head">Contact Me</h2>
+      <form class="main__contact-form">
+        <label class="main__contact-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" required class="main__contact-name">
+        <label for="email" class="main__contact-label">Email:</label>
+        <input type="email" id="email" name="email" required class="main__contact-email">
+        <label for="message" class="main__contact-label">Message:</label>
+        <textarea id="message" name="message" rows="4" required class="main__contact-text"></textarea>
+        <button type="submit" class="main-contact-button">Send Message</button>
       </form>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2023 Graphic Designer Portfolio. All rights reserved.</p>
+  <footer class="footer">
+    <p class="footer__text">&copy; 2023 Graphic Designer Portfolio. All rights reserved.</p>
   </footer>
 </body>
 </html>
